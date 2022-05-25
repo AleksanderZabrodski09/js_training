@@ -8,14 +8,20 @@
 </head>
 
 <body>
-    <p>
-        Задание: разбейте код на отдельные инструкции таким образом, чтобы он выводил на экран два сообщения "hello", а
-        потом "world"
-    </p>
+
     <script>
-        alert("hello");
-		alert("hello");
-        alert("world");
+
+        function repeatStr(n, s) {
+            let newString = ''
+            while (n > 0) {
+                newString += s
+                n--
+            }
+            return newString
+        }
+        repeatStr(6, "I")
+        repeatStr(5, "Hello")
+
     </script>
 </body>
 
