@@ -13,9 +13,26 @@
         потом "world"
     </p>
     <script>
-        alert("hello");
-		alert("hello");
-        alert("world");
+        function bonusTime(salary, bonus) {
+            // return bonus ? `£${10 * salary}` : `£${salary}`;
+            // if (bonus === true) {
+            //     return '£' + salary * 10
+            // } else {
+            //     return '£' + salary
+            // }
+            // return '£' + salary * (bonus ? 10 : 1);
+            if (bonus) {
+                return "£" + (salary * 10).toString();
+            }
+            return "£" + salary.toString();
+        }
+
+
+        console.log(bonusTime(100, false))
+
+
+
+
     </script>
 </body>
 
